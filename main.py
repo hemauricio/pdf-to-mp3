@@ -9,7 +9,7 @@ parser.add_argument('path',
                     help = 'Path to the PDF file')
 parser.add_argument('-l', '--lang',
                     required = False,
-                    help = 'language to read the PDF. Default is en',
+                    help = 'language to read the PDF. Default is \'en\'',
                     default = 'en')
 parser.add_argument('-s', '--slow',
                     required = False,
@@ -18,7 +18,7 @@ parser.add_argument('-s', '--slow',
                     default = False)
 parser.add_argument('-o', '--output',
                     required = False,
-                    help = 'Output filename (w/ .mp3; e.g. -o filename.mp3)')
+                    help = 'Output filename (w/ .mp3; e.g. -o filename.mp3). Defaults to the originalfilename + \'.mp3\'')
 
 args = parser.parse_args()
 
